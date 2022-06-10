@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cc6e234b4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="leaveApplication.css">
+</head>
+<body>
+    <header>
+        <div class="banner" id="banner">
+            <h1>Leave Management System</h1>
+            <div class="logo">
+                <i style="cursor: pointer;" id="profile" title="profile" class="fa-solid fa-user"></i>
+                <i id="log-out" title="Log out" class="fa-solid fa-arrow-right-from-bracket log-out"></i>
+            </div>
+        </div>
+        <div class="heading">
+            <div>
+                <h2 style="font-size:2em">Hi there!</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>simon.rosedale99@mail.com</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="leave-form">
+            <p>Apply Leaves</p>
+            <hr>
+            <div class="leave-container">
+                <div>
+                    <label for="">Name</label>
+                    <br><br>
+                    <input id="name" class="inputStyle" placeholder="Name">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <br><br>
+                    <input  id="email" class="inputStyle" placeholder="Email">
+                </div>
+                <div>
+                    <label for="leaveType">Leave Type</label>
+                    <br><br>
+                    <select id="leaveType" name="cars">
+                        <option value="Working From Home">Working From Home</option>
+                        <option value="Parental Leave">Parental Leave</option>
+                        <option value="Annual Leave">Annual Leave</option>
+                        <option value="Normal Leave">Normal Leave</option>
+                      </select>
+                </div>
+                
+                <div>
+                    <label for="">From</label>
+                    <br><br>
+                    <input style="font-size:15px" class="inputStyle" type="date" name="" id="date">
+                </div>
+                <div>
+                    <label for="">Number of Days Leave</label>
+                    <br><br>
+                    <input type="number" min="0" max="2" id="dayNumber" class="inputStyle">
+                </div>
+                <div>
+                    <label for="">Half Day</label>
+                    <br><br>
+                    <select name="" id="dayType" >
+                        <option value="Half Day">Half Day</option>
+                        <option value="Full Day">Full Day</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="">Reason</label>
+                <br><br>
+                <textarea placeholder="Write your Reason" name="" id="reason" cols="90" rows="10"></textarea>
+            </div>
+            <div id="button-grp">
+                <button id="apply">Apply</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/leaveApplication.js"></script>
+</body>
+</html>

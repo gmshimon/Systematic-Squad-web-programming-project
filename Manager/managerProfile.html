@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Profile</title>
+
+    <link rel="stylesheet" href="managerStyle.css">
+    <link rel="stylesheet" href="mangProfie.css">
+    <script src="https://kit.fontawesome.com/cc6e234b4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner" id="banner">
+            <h1>Leave Management System</h1>
+            <div class="logo">
+                <i title="Log out" class="fa-solid fa-arrow-right-from-bracket log-out"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="interface">
+        <div class="navigation">
+
+            <div class="n1">
+              <div class="search">
+                <span class="material-icons">
+                  search
+                </span>
+                <input type="text" placeholder="Search">
+              </div>
+            </div>
+      
+            <div class="profile">
+              <span title="Applications dashboard" style="cursor: pointer;" class="material-icons" onclick="goDashboard()">
+                dashboard
+              </span>
+              <a href="managerProfile.html" title="Profile">
+                <span class="material-icons">
+                  person
+                </span>
+              </a>
+            </div>
+          </div>
+    </section>
+
+    <section class="information-container">
+        <div class="information-header">
+            <h2 style="margin-left: 100px;">My Information</h2>
+            <a href="managerEditProfile.html">
+                <i title="Edit Profile" id="edit-profile" style="margin-right: 100px;  cursor: pointer;" class="fa-solid fa-pen-to-square"></i>
+            </a>
+        </div>
+        <hr>
+        <div class="information">
+            <div>
+                <img width="200px" src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="">
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td>
+                            <span class="data">Jack Holding</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender:
+                        </td>
+                        <td>
+                            <span class="data">Male</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Father Name:
+                        </td>
+                        <td>
+                            <span class="data">James Holding</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mother Name:
+                        </td>
+                        <td>
+                            <span class="data"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            date of Birth:
+                        </td>
+                        <td>
+                            <span class="data">05/10/1989</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email:
+                        </td>
+                        <td>
+                            <span class="data">j.holding99@gmail.com</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Role:
+                        </td>
+                        <td>
+                            <span class="data">Manager</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address:
+                        </td>
+                        <td>
+                            <span class="data">Johor Bahru,Johor,Malaysia</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone:
+                        </td>
+                        <td>
+                            <span class="data">+60187817582</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </section>
+    <script>
+        function goDashboard(){
+            location.href="./managerDashboard.html";
+        }
+    </script>
+</body>
+
+</html>

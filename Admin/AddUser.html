@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminStyle.css">
+   <script src="AddUser.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a href="homePaageAdmin.html">
+
+   
+        <div class="option">
+            <p>Home</p>
+              <img  src="img/homePage.png" alt="">
+        </div>
+    
+       </a>
+  <div id="user-cont">
+    <div id="addUser">
+        <h2>Add new User</h2>
+    <input id="username" type="text" name="" placeholder="Enter User Name" id="">
+    <br>
+    <br>
+    <input id="email" type="text" name="" placeholder="Enter User Email" id="">
+    <br>
+    <br>
+    <input type="password" name="" placeholder="Enter User Password" id="">
+    <br>
+    <br>
+    <input  id="addnewuser"   type="button" value="Add New User">
+    </div>
+<section>
+</div>
+<h2 >Added User</h2>
+<div id="users">
+
+</div>
+</section>
+</body>
+
+<script>
+
+  
+document.getElementById('addnewuser').addEventListener('click', function()
+{  
+    const userName = document.getElementById('username');
+    const user_email= document.getElementById('email')
+    
+    const newUser = document.createElement('p');
+    newUser.innerText= "Username : "+ userName.value;
+    const userEmail = document.createElement('p');
+    userEmail.innerText="Email: "+ user_email.value; 
+ 
+    const userContainer= document.getElementById('users');
+    const newDiv = document.createElement('div');
+    newDiv.style.backgroundColor="pink";
+    newDiv.style.border="2px solid white"
+    newDiv.style.borderRadius="10%"
+    newDiv.style.width="30%"
+    userContainer.style.display="flex"
+    userContainer.style.justifyContent="center"
+    userContainer.style.flexWrap="wrap"
+    userContainer.appendChild(newDiv);
+    newDiv.appendChild(newUser);
+    newDiv.append(userEmail);
+     
+    const removebutton= document.createElement('button');
+    removebutton.innerHTML="Remove this User";
+    newDiv.appendChild(removebutton);
+  removebutton.addEventListener('click',function()
+  {
+      newDiv.style.display="none";
+  }) 
+  const editInfo= document.createElement('button');
+   editInfo.innerHTML="Edit User";
+   newDiv.appendChild(editInfo);
+   editInfo.addEventListener('click',function()
+  {
+    let editUsername = prompt("Edit Username", userName.value);
+    let email = prompt("Edit Email", user_email.value);
+    let password = prompt("Edit Password", "Harry Potter");
+    newUser.innerText= "Username : "+ editUsername;
+    userEmail.innerText="Email: "+ email; 
+  }) 
+});
+
+
+</script>
+</html>

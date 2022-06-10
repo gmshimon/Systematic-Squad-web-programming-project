@@ -1,0 +1,120 @@
+body{
+    margin:0;
+}
+.banner{
+    background-color: lightblue;
+    background-size: 100%;
+    width: 100%;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    color: aliceblue;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    position: absolute;
+    right:180px;
+}
+.log-out{
+    padding-left:30px;
+}
+.heading{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 50px;
+    background-color:lightgrey;
+    
+}
+.information{
+    padding:30px 0;
+    display:flex;
+    justify-content:space-evenly;
+}
+.information-container{
+    width:700px;
+    height:700px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top:30px;
+    margin-left:20px;
+    border-radius:10px;
+}
+.information-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.profile{
+    padding-right: 100px;
+    padding-bottom:20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.data{
+    font-weight: 900;
+}
+main{
+    display:flex;
+    justify-content:space-evenly;
+}
+.result-container{
+    width: 650px;
+    height:450px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top:30px;
+    margin-right: 20px;
+    border-radius:10px;
+    padding:10px 0;
+}
+.result-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+#resultTable{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin:auto;
+}
+#resultTable th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+#resultTable td, #resultTable th{
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center
+}
+
+.edit-profile-container{
+    width:800px;
+    height:600px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top:30px;
+    margin-left:20px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+}
+.box>div>h2{
+    text-align: center;
+}
+#submit-btn{
+    text-align: center;
+    padding: 8px 15px;
+    border:none;
+    background-color: orange;
+    border-radius:5px;
+}
+#submit-btn:hover{
+    background-color:black;
+    color:white;
+    border-bottom: 2px solid orange;
+    transition: background 0.5s;
+}

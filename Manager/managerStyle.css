@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Copy Staff --------------------------------------- */
+body {
+    background: #efe7eb;
+    margin: 0;
+}
+
+.banner {
+    background-color: lightblue;
+    background-size: 100%;
+    width: 100%;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    color: aliceblue;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    right:180px;
+}
+
+.heading {
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 50px;
+    background-color:lightgrey;
+
+}
+
+/* Copy Staff end ----------------------------------- */
+
+
+
+/* Nav Items */
+
+#interface {
+    width: 100%;
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 3px solid lightblue;
+}
+
+
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+#interface .navigation .search span {
+    margin-right: 4px;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#interface .navigation .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profile span {
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 400px;
+}
+
+#interface .navigation .profile a {
+    color: #000000;
+}
+
+
+
+/* Dashboard Items */
+
+.i_name {
+    text-align: center;
+    color: #444a53;
+    padding: 10px 30px 0px 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.counts {
+    padding: 10px 30px 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.counts .boxes {
+    background: white;
+    width: 200px;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.counts .boxes .icon {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.counts .boxes:nth-child(1) .icon {
+    background: rgb(233, 76, 207);
+}
+
+.counts .boxes:nth-child(2) .icon {
+    background: rgb(76, 115, 233);
+}
+
+.counts .boxes h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.counts .boxes span {
+    font-size: 15px;
+    color: #828997;
+}
+
+/* Table items */
+
+.applications {
+    width: 95%;
+    margin: 30px 30px 0px 30px;
+    overflow: auto;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.applications span {
+    font-size: 30px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.applications h5 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.applications p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d; 
+}
+
+.applications .staff {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    text-align: start;
+}
+
+.applications .staff .staff-de p, h5{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead td {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #f9fafb;
+    text-align: start;
+    padding: 15px;
+}
+
+tbody tr td {
+    padding: 10px 10px;
+}
+
+.approved p {
+    background: #d7fada;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #2b2b2b;
+}
+
+.approve {
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.reject {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.role p{
+    color: black;
+}

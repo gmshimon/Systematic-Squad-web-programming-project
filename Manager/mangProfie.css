@@ -1,0 +1,102 @@
+.information{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.information-container{
+    background: white;
+    width: 800px;
+    height: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius:10px;
+}
+
+.information-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.information-header a {
+    color: black;
+}
+
+td{
+    padding-right: 100px;
+    padding-bottom:20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: 30px;
+}
+
+.data{
+    font-weight: 900;
+}
+
+/* Edit profile */
+
+.cancelIcon {
+    margin-right: 100px;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.cancelIcon:hover {
+    color: darkred;
+}
+
+#error {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 10px;
+    height: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+.input_holder {
+    padding: 5px;
+    border: 1px solid #d7dbe6;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.table_input {
+    border: none;
+    outline: none;
+    width: 100%;    
+    font-size: 15px;
+}
+
+#gender_select {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 1px;
+    font-size: 15px;
+}
+
+.dob_input {
+    font-size: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.submit {
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    min-height:30px;
+}
+
+.submit:hover {
+    background-color: #0059ff;
+}

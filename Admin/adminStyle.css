@@ -1,0 +1,83 @@
+.banner{
+    background-color: lightblue;
+    padding: 5px;
+   background-size: 100%;
+   
+	width: 100%;
+   
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+   color: aliceblue;
+
+}
+html , body{
+    margin: 0;
+}
+.option{
+
+    background-color: lightblue;
+    padding: 5px;
+   height: 100px;
+   width: 200px;
+   border-radius: 20%;
+   
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   font-size:x-large;
+   font-weight: bolder;
+   color: aliceblue;
+   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+   border: 5px solid black;
+   margin-right: 5px;
+}
+h2{
+    color: aliceblue;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+#home-body{
+font-size: x-large;
+    color: aliceblue;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    padding: 10px;
+}
+body{
+    background-color: grey;
+    text-align: center;
+}
+img{
+
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#flex-box{
+    display: flex;
+    justify-content:space-evenly;
+   
+  
+}
+#addUser{
+    margin:  o auto;
+   
+    background-color: lightblue;
+    width: 500px;padding: 50px;
+}
+#user-cont{
+  display: flex;
+  justify-content:center ;
+  padding: 5px;
+  
+}
+input{
+    width: 50%;
+    border-radius: 5%;
+    height: 25px;
+    
+}
+#manageUser{
+    
+    display: flex;
+    padding: 10px;
+}

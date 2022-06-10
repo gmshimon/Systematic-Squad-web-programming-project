@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Profile</title>
+
+    <link rel="stylesheet" href="managerStyle.css">
+    <link rel="stylesheet" href="mangProfie.css">
+    <script src="https://kit.fontawesome.com/cc6e234b4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="banner" id="banner">
+            <h1>Leave Management System</h1>
+            <div class="logo">
+                <i title="Log out" class="fa-solid fa-arrow-right-from-bracket log-out"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="interface">
+        <div class="navigation">
+
+            <div class="n1">
+                <div class="search">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <span onclick="goDashboard()" title="Dashboard" style="cursor: pointer;" class="material-icons">
+                    dashboard
+                </span>
+                <a href="managerProfile.html" title="Profile">
+                    <span class="material-icons">
+                        person
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="information-container">
+        <div class="information-header">
+            <h2 style="margin-left: 100px;">Edit My Information</h2>
+            <a href="managerProfile.html" title="Cancel">
+                <span class="material-icons cancelIcon">
+                    cancel
+                </span>
+            </a>
+        </div>
+        <hr>
+        <div class="information">
+            <div>
+                <img width="200px"
+                    src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+                    alt="">
+            </div>
+            <div>
+                <div id="error"></div>
+                <form id="form" action="" method="get">
+                    <table>
+                        <tr>
+                            <td>
+                                Name:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="text" class="table_input" id="name" placeholder="" required></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender:
+                            </td>
+                            <td>
+                                <span class="input_holder">
+                                    <select name="Gender" id="gender_select"  required>
+                                        <option value="" disabled selected>Select:</option> 
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Father's Name:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="text" class="table_input" id="father_name" placeholder=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mother's Name:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="text" class="table_input" id="mother_name" placeholder=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Date of Birth:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="date" min='1899-01-01' max="2022-06-09" name="dob" class="dob_input" id="dob" required></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="email" class="table_input" id="email" placeholder="" required></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Role:
+                            </td>
+                            <td>
+                                <span class="data">Manager</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Address:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="text" class="table_input" id="address" placeholder="" required></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone:
+                            </td>
+                            <td>
+                                <span class="input_holder"><input type="tel" class="table_input" id="ph_no" placeholder="" required></span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="text-align:center; margin-top: 20px; padding-bottom:10px;">
+                        <button type="submit" class="submit" id="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Script -->
+    <script>
+        function goDashboard(){
+    location.href="./managerDashboard.html";
+}
+    </script>
+    <script src="js/managerProfileEdit.js"></script>
+</body>
+
+</html>

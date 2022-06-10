@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cc6e234b4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="homePageStaff.css">
+</head>
+<body>
+    <header>
+        <div class="banner" id="banner">
+            <h1>Leave Management System</h1>
+            <div class="logo">
+                <i title="profile" class="fa-solid fa-user"></i>
+                <i title="Log out" class="fa-solid fa-arrow-right-from-bracket log-out"></i>
+            </div>
+        </div>
+        <div class="heading">
+            <div>
+                <h2 style="font-size:2em">Hi there!</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>simon.rosedale99@mail.com</span>
+            </div>
+        </div>
+    </header>
+    <main id="main" >
+        <section id="information-container" class="information-container">
+            <div class="information-header">
+                <h2 style="margin-left: 100px;">My Information</h2>
+                <i title="Edit Profile" onclick="edit()" style="margin-right: 100px;  cursor: pointer;" class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <hr>
+            <div class="information">
+                <div>
+                    <img width="200px" src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="">
+                </div>
+                <div>
+                    <table id="profile-table">
+                        <tr>
+                            <td class="profile">
+                                Name:
+                            </td>
+                            <td class="profile">
+                                <span id="name" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Gender:
+                            </td>
+                            <td class="profile">
+                                <span id="gender" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Father Name:
+                            </td>
+                            <td class="profile">
+                                <span id="fatherName" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Mother Name:
+                            </td>
+                            <td class="profile">
+                                <span id="motherName" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                date of Birth:
+                            </td>
+                            <td class="profile">
+                                <span id="dob" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Email:
+                            </td>
+                            <td class="profile">
+                                <span id="email" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Role:
+                            </td>
+                            <td class="profile">
+                                <span id="role" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Address:
+                            </td>
+                            <td class="profile">
+                                <span id="address" class="data"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="profile">
+                                Phone:
+                            </td>
+                            <td class="profile">
+                                <span id="phone" class="data"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div style="text-align:center; padding-bottom:30px;">
+                <button style=" background-color:#0a0a23;color: #fff;border:none;border-radius:10px;padding:15px;min-height:30px; cursor: pointer;" id="leave-application"> <i style="margin-right:5px;" class="fa-solid fa-arrow-right-from-bracket"></i>Leave Application</button>
+            </div>
+        </section>
+        <section class="right-container">
+            <div class="result-container">
+                <div class="result-header">
+                    <h3>Result</h3>
+                    <div>
+                        <input id="date" placeholder="Search by month name"type="date">
+                        <i style="cursor:pointer;" onclick="searchDate()" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex;justify-content:space-between;margin: 0 50px;">
+                    <h4 id="currentDate"></h4>
+                    <h4>Remaining Leaves: <span id="leaveNumber">2</span> </h4> 
+                </div>
+                <!-- <button onclick="leaveChange()">change++</button> -->
+                <div id="results">
+                    <div class="result" id="result">
+                        <table id="resultTable">
+                        </table>
+                        <div id="errorMessage"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr  style="margin-right: 20px;"> -->
+            
+            <div class="result">
+
+            </div>
+            <div class="report"></div>
+        </section>
+    </main>
+    <!--edit profile section-->
+    <section id="edit-profile-container" class="edit-profile-container">
+        <div class="box">
+            <div>
+                <h2>Edit profile</h2>
+            </div>
+            <hr>
+            <form action="">
+                <table>
+                    <tr>
+                        <td class="profile">Name:</td>
+                        <td class="profile"> <input style="width:110%;" type="text" id="updateName"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Gender:</td>
+                        <td class="profile"> 
+                        <select id="updateGender" style="width: 114%;" name="" id="">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Father Name:</td>
+                        <td class="profile"> <input style="width: 110%;" type="text" id="updateFatherName"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Mother Name:</td>
+                        <td class="profile"> <input style="width: 110%;" type="text" id="updateMotherName"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Date of Birth:</td>
+                        <td class="profile"> <input style="width: 110%;" type="date" placeholder="dd-mm-yyyy"  id="updateDOB"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Email:</td>
+                        <td class="profile"> <input style="width: 110%;" type="text" id="updateEmail"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Role:</td>
+                        <td class="profile"> <input style="width: 110%;" disabled type="text" id="updateRole"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Address:</td>
+                        <td class="profile"> <input style="width: 110%;" type="text" id="updateAddress"></td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Phone Number:</td>
+                        <td class="profile"> <input style="width: 110%;" type="text" id="updatePhone"></td>
+                    </tr>
+                </table>
+            </form>
+            <div style="text-align:center">
+                <button id="submit-btn" onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/homePageStaff.js"></script>
+</body>
+</html>

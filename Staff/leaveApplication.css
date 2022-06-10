@@ -1,0 +1,88 @@
+body{
+    margin:0;
+}
+header{
+    margin-bottom: 30px;
+}
+.banner{
+    background-color: lightblue;
+    background-size: 100%;
+    width: 100%;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    position: absolute;
+    right:180px;
+}
+.log-out{
+    padding-left:30px;
+}
+.heading{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 50px;
+    background-color:lightgrey;
+    
+}
+p{
+    font-size:2em;
+}
+.leave-form{
+    width: 700px;
+    height: 550x;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(231, 25, 25, 0.457);
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(220, 232, 236);
+}
+.leave-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.leave-container>div{
+    margin-bottom: 30px;
+}
+#leaveType,#dayType{
+    width:212px;
+    padding:5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.inputStyle{
+    width:200px;
+    padding:5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#remaining-leave{
+    background-color:lightgrey;
+    color: black;
+}
+label{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#button-grp{
+    text-align: center;
+}
+#apply{
+    background-color:orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius:5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#apply:hover{
+    background-color:black;
+    border-bottom: 3px solid orange;
+    color: white;
+    transition:background 0.5s
+}
